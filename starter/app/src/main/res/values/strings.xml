@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">Monkey Shoes</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_new_login">New! Create a Login</string>
+    <string name="enter_your_email_here">Enter Your Email Here</string>
+    <string name="password_goes_here">Password Goes Here</string>
+    <string name="welcome_to_monkey_shoes">Welcome to Monkey Shoes</string>
+    <string name="stolen_shoes">The place where you find all those shoes those monkeys have stolen!</string>
+    <string name="welcome_continue">Continue</string>
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_info">You will get to see all the shoes that the monkeys stolen from you. You can select on to get more details about those shoes. And you can add shoes that the monkeys stolen from you.</string>
+    <string name="find_shoes">Find My Shoes</string>
 </resources>
