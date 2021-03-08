@@ -23,6 +23,10 @@ class ShoeListingFragment: Fragment() {
             Timber.i("FLOAT CLICKED")
         }
 
+        //activity?.supportFragmentManager?.beginTransaction()?.replace(R.id.loginFragment, this)
+        //activity?.supportFragmentManager?.popBackStack()
+
+
         return binding.root
     }
 }

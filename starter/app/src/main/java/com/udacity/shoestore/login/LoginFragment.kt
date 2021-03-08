@@ -27,6 +27,10 @@ class LoginFragment: Fragment() {
             view.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 
+        binding.createLoginButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        }
+
         return binding.root
     }
 }
