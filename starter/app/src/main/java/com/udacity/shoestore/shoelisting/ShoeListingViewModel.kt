@@ -1,11 +1,16 @@
 package com.udacity.shoestore.shoelisting
 
+import android.view.View
+import androidx.databinding.ObservableField
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
+import timber.log.Timber
 
 class ShoeListingViewModel: ViewModel() {
+
+    val shoeName = ObservableField<String>()
 
     private val _shoeList = MutableLiveData<MutableList<Shoe>>()
     val shoeList: LiveData<MutableList<Shoe>>
@@ -29,5 +34,10 @@ class ShoeListingViewModel: ViewModel() {
         oldList?.add(Shoe(name, size, company, desc))
         _shoeList.value = oldList
     }
+
+    fun onTest(v: View) {
+        Timber.i("This is a test")
+    }
+
 
 }

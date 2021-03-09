@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 
@@ -22,20 +20,20 @@ class ShoeDetailFragment: Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
 
-        binding.saveButton.setOnClickListener {  view: View ->
-            val shoeName = binding.editShoeName.text.toString().trim()
-            val company = binding.editCompany.text.toString().trim()
-            val desc = binding.editShoeDesc.text.toString().trim()
-            val size = binding.editSizeText.text.toString().trim()
-            if(checkEditFields(shoeName, company, desc, size)) {
-                (activity as? MainActivity)?.viewModel?.addShoes(shoeName, company, desc, size.toDouble())
-                view.findNavController().popBackStack()
-            }
-        }
+//        binding.saveButton.setOnClickListener {  view: View ->
+//            val shoeName = binding.editShoeName.text.toString().trim()
+//            val company = binding.editCompany.text.toString().trim()
+//            val desc = binding.editShoeDesc.text.toString().trim()
+//            val size = binding.editSizeText.text.toString().trim()
+//            if(checkEditFields(shoeName, company, desc, size)) {
+//                (activity as? MainActivity)?.viewModel?.addShoes(shoeName, company, desc, size.toDouble())
+//                view.findNavController().popBackStack()
+//            }
+//        }
 
-        binding.cancelButton.setOnClickListener { view: View ->
-            view.findNavController().popBackStack()
-        }
+//        binding.cancelButton.setOnClickListener { view: View ->
+//            view.findNavController().popBackStack()
+//        }
 
         return binding.root
     }
