@@ -18,10 +18,10 @@ class LoginFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater, R.layout.fragment_login, container, false)
-
+        //use to hide the floating action button so it only shows up later
         (activity as? MainActivity)?.fab?.hide()
-
-        //(activity as AppCompatActivity).supportActionBar?.title = "test"
+        //use to hide the action bar because unable to hide the menu
+        (activity as MainActivity).supportActionBar?.hide()
 
         binding.loginButton.setOnClickListener {  view: View ->
             view.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
@@ -31,6 +31,8 @@ class LoginFragment: Fragment() {
             view.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
 
+
         return binding.root
     }
+
 }

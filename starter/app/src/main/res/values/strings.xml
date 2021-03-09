@@ -14,4 +14,6 @@
     <string name="find_shoes">Find My Shoes</string>
     <string name="shoe_name_label">Name:</string>
     <string name="shoe_company_label">Company:</string>
+    <string name="logout">Logout</string>
+    <string name="this_goes_to_screen_to_add_new_shoe">This goes to screen to add new shoe</string>
 </resources>

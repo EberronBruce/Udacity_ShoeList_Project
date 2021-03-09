@@ -26,6 +26,7 @@ class ShoeListingFragment: Fragment() {
         (activity as? MainActivity)?.fab?.show()
 
 
+
         viewModel = ViewModelProvider(this).get(ShoeListingViewModel::class.java)
         (activity as? MainActivity)?.fab?.setOnClickListener {
 
