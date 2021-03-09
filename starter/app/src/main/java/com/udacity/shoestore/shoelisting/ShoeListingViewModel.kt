@@ -24,12 +24,10 @@ class ShoeListingViewModel: ViewModel() {
         )
     }
 
-//    fun testShoes() {
-//        //Timber.i("Test Shoes")
-//        val test = _shoeList.value
-//        test?.add(Shoe("Test", 11.2, "Test","its a test shoe"))
-//        _shoeList.value = test
-//        //Timber.i("${shoeList.value}")
-//    }
+    fun addShoes(name: String, company: String, desc: String, size: Double) {
+        val oldList = _shoeList.value
+        oldList?.add(Shoe(name, size, company, desc))
+        _shoeList.value = oldList
+    }
 
 }

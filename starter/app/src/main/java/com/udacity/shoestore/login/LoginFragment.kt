@@ -21,7 +21,7 @@ class LoginFragment: Fragment() {
         //use to hide the floating action button so it only shows up later
         (activity as? MainActivity)?.fab?.hide()
         //use to hide the action bar because unable to hide the menu
-        (activity as MainActivity).supportActionBar?.hide()
+        //(activity as MainActivity).supportActionBar?.hide()
 
         binding.loginButton.setOnClickListener {  view: View ->
             view.findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())

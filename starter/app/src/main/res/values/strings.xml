@@ -16,4 +16,12 @@
     <string name="shoe_company_label">Company:</string>
     <string name="logout">Logout</string>
     <string name="this_goes_to_screen_to_add_new_shoe">This goes to screen to add new shoe</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="enter_size_here">Enter Size Here</string>
+    <string name="enter_shoe_name">Enter Shoe Name</string>
+    <string name="enter_company_name">Enter Company Name</string>
+    <string name="size_label">Size:</string>
+    <string name="desc_label">Desc:</string>
+    <string name="enter_description_here">Enter Description Here</string>
 </resources>
