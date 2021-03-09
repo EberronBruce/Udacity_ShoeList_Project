@@ -49,12 +49,6 @@ class ShoeListingFragment: Fragment() {
         inflater.inflate(R.menu.logout_menu, menu)
     }
 
-    //    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-//        super.onCreateOptionsMenu(menu, inf)
-//        menuInflater.inflate(R.menu.logout_menu, menu)
-//        return true
-//    }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController()) || super.onOptionsItemSelected(item)
     }

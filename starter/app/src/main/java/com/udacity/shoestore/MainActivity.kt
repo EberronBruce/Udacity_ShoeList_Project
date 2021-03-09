@@ -12,7 +12,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.udacity.shoestore.databinding.ActivityMainBinding
 import com.udacity.shoestore.shoelisting.ShoeListingViewModel
-import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var viewModel: ShoeListingViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Timber.i("OnCreate Called")
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         fab = binding.fab
