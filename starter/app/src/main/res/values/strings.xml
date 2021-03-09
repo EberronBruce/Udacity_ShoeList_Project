@@ -12,4 +12,6 @@
     <string name="instructions_title">Instructions</string>
     <string name="instructions_info">You will get to see all the shoes that the monkeys stolen from you. You can select on to get more details about those shoes. And you can add shoes that the monkeys stolen from you.</string>
     <string name="find_shoes">Find My Shoes</string>
+    <string name="shoe_name_label">Name:</string>
+    <string name="shoe_company_label">Company:</string>
 </resources>
