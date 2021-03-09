@@ -71,6 +71,7 @@
             android:ems="10"
             android:hint="@string/enter_shoe_name"
             android:inputType="text"
+            android:text="@={showListingViewModel.shoeName}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoeNameTitle"
             app:layout_constraintTop_toTopOf="parent"
